@@ -44,7 +44,9 @@ article {
 }
 .article1Index {
     overflow: hidden;
+    margin: 3px auto;
 }
+
 .carrouselIndex {
     width:370px;
     margin: 0 auto;
@@ -145,6 +147,25 @@ ul {
     .negrita{
         font-weight: bold;
         color: brown;
+        position: relative;
+        &::after {
+            content: url(../logos_redes/spotify.svg);
+            position: absolute;
+            right:-1.6em;
+        }
+    }
+    li {
+        a {
+            &:hover {
+                color: crimson;
+            }
+        }
+    }
+    
+    .temasMusica {
+        color: black;
+        text-decoration: none;
+       
     }
 }
 

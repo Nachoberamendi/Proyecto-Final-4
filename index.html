@@ -58,57 +58,71 @@
         </nav>
     </header>
 
-    <section class="col-12 section1Index pb-4">
-        <div class="carrouselIndex">
-            <div class=" container-fluid d-flex justify-content-center pt-1 pb-2">
-                <h2 id="h2Index" class="pt-3 fs-2">Novedades</h2>
-            </div>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
+    <section class="container-fluid col-12 section1Index pb-4">
+        <div class="row">
+            <div class="carrouselIndex">
+                <div class=" container-fluid d-flex justify-content-center pt-1 pb-2">
+                    <h2 id="h2Index" class="pt-3 fs-2">Novedades</h2>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <a href=""><img src="imagenes/wosmugre.jpg" class="d-block w-100" alt="foto wos">
-                        </a>
-                        <div class="carousel-caption d-xs-block py-5">
-                            <h4 class="tituloNoticia">Wos estrena Mugre</h4>
-                            <p class="fs-6 article1Index">Mugre es un track cargado de emociones fuertes. Su estructura progresiva hace que
-                                sea un
-                                viaje
-                                con
-                                distintos parajes en las sensaciones que transmite cada compás. Muestra sentimientos como la
-                                ira
-                                y
-                                refleja la lucha interna con el ego propio y al mismo tiempo la competencia constante de
-                                egos.
-                                Combina sonidos de teclados que le dan un tinte épico, con bajos y percusiones potentes a
-                                las
-                                que se
-                                le suman guitarras eléctricas para agregarle el clima hardcore que pide la letra.
-        
-                                Los cortes futuristas y la profundidad de la voz, en perfecta simbiosis con los coros góspel
-                                del
-                                final, hacen que sea una obra de arte completa y delicada. En Mugre participan Pedro
-                                Pasquale,
-                                Fran
-                                Azorai y la voz del gospel final es de la maravillosa Caterina Finocchi.</p>
-                        </article>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="active"
+                            aria-current="true" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1000">
+                            <a href="#collapseUno" data-bs-toggle="collapse" aria-expanded="false"
+                                aria-controls="collapseUno">
+                                <img src="imagenes/wosmugre2.jpg" class="d-block w-100" alt="foto wos">
+                            </a>
+                            <div class="carousel-caption d-block py-5">
+                                <h4 class="tituloNoticia">Wos estrena Mugre</h4>
+                            </div>
                         </div>
-                        
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <a href="#collapseDos" data-bs-toggle="collapse" aria-expanded="false"
+                                aria-controls="collapseDos">
+                                <img src="imagenes/canserbero.jpg" class="d-block w-100" alt="foto wos">
+                            </a>
+                            <div class="carousel-caption d-block py-5">
+                                <h4 class="tituloNoticia">Wos estrena Mugre</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Acordeon -->
+        <div class="accordion row justify-content-center mt-5" id="acordeonNoticias">
+            <div class="accordion-collapse collapse col-10" id="collapseUno" data-bs-parent="#acordeonNoticias">
+                <div class="collapseNoticias container-fluid">
+                    <div class="row">
+                        <div class="noticia">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo assumenda dicta quae odit laborum ducimus neque eaque maiores. Maxime quis, quibusdam laboriosam iure, blanditiis at praesentium necessitatibus culpa reprehenderit nam sed fugiat dicta iste eligendi modi animi dolorem vitae. Numquam quidem aliquam enim, amet hic culpa ipsam exercitationem aliquid perferendis quaerat nemo nisi? Unde nisi nam vitae veritatis iste temporibus ratione molestiae ex corrupti sunt odit quam commodi aspernatur id quia doloremque libero, fugiat debitis. Quis voluptatum ullam veniam neque? Inventore nemo fugit, eius laborum nulla, atque quaerat porro, eaque odio debitis maxime! Laboriosam ex beatae atque vitae repudiandae expedita.</p>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="accordion-collapse collapse" id="collapseDos" data-bs-parent="#acordeonNoticias">
+                <div class="collapseNoticias container-fluid">
+                    <div class="row">
+                        <div class="noticia">
+                            <p>Noticia 2</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -136,6 +136,7 @@ article {
 
 .article1Index {
   overflow: hidden;
+  margin: 3px auto;
 }
 
 .carrouselIndex {
@@ -255,6 +256,22 @@ ul {
 ul .negrita {
   font-weight: bold;
   color: brown;
+  position: relative;
+}
+
+ul .negrita::after {
+  content: url(../logos_redes/spotify.svg);
+  position: absolute;
+  right: -1.6em;
+}
+
+ul li a:hover {
+  color: crimson;
+}
+
+ul .temasMusica {
+  color: black;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 450px) {
