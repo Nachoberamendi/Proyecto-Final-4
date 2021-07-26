@@ -38,6 +38,17 @@ article {
     line-height: 1.5em;
     font-size: .8em;
 }
+.tituloNoticia {
+    font-family: $robotoTitulo;
+    color: snow;
+}
+.article1Index {
+    overflow: hidden;
+}
+.carrouselIndex {
+    width:370px;
+    margin: 0 auto;
+}
 #asideIndex {
     background: $bgasideIndex ;
     h3{
@@ -97,12 +108,11 @@ article {
             font-size: 1.5em;
             color:maroon;
             letter-spacing: 1.5px;
-            animation-name: titulos_musica;
-            animation-iteration-count:infinite ;
-            animation-timing-function:ease-in ;
-            animation-duration: 2s;
+            animation-name: animacion;
+            animation-iteration-count:infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 4s;
             animation-delay: 2s;
-            width: auto;
                         }
     }
     .parrafo__artistas {
@@ -113,7 +123,7 @@ article {
     }     
 }
 .sizeCarrousel {
-    width: 300px;
+    width: 370px;
     margin: 0 auto;
 }
 a {
@@ -136,7 +146,23 @@ ul {
         font-weight: bold;
         color: brown;
     }
-} 
+}
+
+@media screen and (min-width: 450px) {
+    .sizeCarrousel {
+     width: 450px;
+                    }
+  }
+@media screen and (min-width: 750px) {
+    .sizeCarrousel {
+     width: 800px;
+                    }
+  } 
+@media screen and (max-width:576px) {
+    .titulo__musica {
+        text-align: center;
+    }
+}
 
                /*CONTACTOS*/
 
@@ -173,17 +199,6 @@ ul {
 form {
     max-width: 500px;
 }
-
-@media screen and (min-width: 450px) {
-    .sizeCarrousel {
-     width: 450px;
-                    }
-  }
-@media screen and (min-width: 750px) {
-    .sizeCarrousel {
-     width: 800px;
-                    }
-  }
 
             /* BASES */ 
 
