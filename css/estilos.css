@@ -109,34 +109,27 @@ footer .logo--redes a .tamano__img:hover {
   color: darkgoldenrod;
 }
 
-#mic {
-  width: 300px;
-  height: 200px;
-  border: darkred 3px solid;
-}
-
-.tituloArticleIndex {
-  font-size: 1.5rem;
+.tituloNoticiaCarrousel {
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  color: burlywood;
-}
-
-article {
-  font-family: "Noto Sans", sans-serif;
-  color: black;
+  color: whitesmoke;
+  font-weight: 600;
   line-height: 1.5em;
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .tituloNoticia {
+  font-size: 1.2em;
   font-family: "Roboto", sans-serif;
-  color: snow;
+  color: burlywood;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
 }
 
-.article1Index {
-  overflow: hidden;
-  margin: 3px auto;
+.articleIndex {
+  font-family: "Noto Sans", sans-serif;
+  font-size: .8em;
+  line-height: 1.6em;
 }
 
 .carrouselIndex {
@@ -193,6 +186,36 @@ article {
   }
   article {
     line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .carrouselIndex {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .carrouselIndex {
+    width: 740px;
+  }
+  .tituloNoticiaCarrousel {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+  }
+  .tituloNoticia {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6em;
+  }
+  .articleIndex {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .carrouselIndex {
+    width: 900px;
   }
 }
 
@@ -254,9 +277,10 @@ ul {
 }
 
 ul .negrita {
-  font-weight: bold;
+  font-weight: 600;
   color: brown;
   position: relative;
+  margin-top: .8em;
 }
 
 ul .negrita::after {
@@ -272,6 +296,7 @@ ul li a:hover {
 ul .temasMusica {
   color: black;
   text-decoration: none;
+  margin-top: 1em;
 }
 
 @media screen and (min-width: 450px) {
