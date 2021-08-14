@@ -2,11 +2,8 @@
 /* backgrounds*/
 /* Operaciones*/
 header {
-  background: -webkit-gradient(linear, left top, right top, from(#c9ffbf), to(#ffafbd));
-  background: linear-gradient(to right, #c9ffbf, #ffafbd);
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  background: -webkit-gradient(linear, left top, right top, from(#854953), to(#ffafbd));
+  background: linear-gradient(to right, #854953, #ffafbd);
   grid-area: header;
   border-top: solid 1px  #BF1363;
   border-bottom: solid 1px  #BF1363;
@@ -14,38 +11,42 @@ header {
 }
 
 header h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Zen Dots", sans-serif;
   font-weight: 900;
-  font-size: 3em;
-  color: #c84b31;
+  font-size: 2.4em;
+  color: whitesmoke;
 }
 
 header .agrandarLogo {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   margin-left: 15%;
   border: 1px solid #460303;
 }
 
-div ul .letraMenu {
+header div ul .letraMenu {
   font-size: 1.1em;
 }
 
-div ul .letraMenu .agrandarItemMenu:hover {
+header div ul .letraMenu .agrandarItemMenu {
+  -webkit-transition: -webkit-transform ease-in-out 350ms;
+  transition: -webkit-transform ease-in-out 350ms;
+  transition: transform ease-in-out 350ms;
+  transition: transform ease-in-out 350ms, -webkit-transform ease-in-out 350ms;
+  color: black;
+  font-weight: 500;
+}
+
+header div ul .letraMenu .agrandarItemMenu:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  color: red;
+  color: #E1F5C4;
 }
 
 footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#dae2f8), to(#d6a4a4));
   background: linear-gradient(to bottom, #dae2f8, #d6a4a4);
   border: #d6a4a4 2px solid;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: footer;
   min-height: 60px;
 }
@@ -58,22 +59,24 @@ footer div .ft {
   color: black;
 }
 
-footer .logo--redes a .tamano__img {
+footer .logoredes a .tamanoImg {
   width: 30px;
   border-color: transparent;
   margin-left: 5px;
+  -webkit-transition: -webkit-transform ease-in-out 300ms;
+  transition: -webkit-transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms, -webkit-transform ease-in-out 300ms;
 }
 
-footer .logo--redes a .tamano__img padding {
+footer .logoredes a .tamanoImg padding {
   bottom: 1%;
   left: 1%;
 }
 
-footer .logo--redes a .tamano__img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
+footer .logoredes a .tamanoImg:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .padding-1 {
@@ -98,18 +101,23 @@ footer .logo--redes a .tamano__img:hover {
 
 /* Contenido (main) de las paginas*/
 .section1Index {
-  background-color: darkcyan;
+  background-color: #c9dab1;
 }
 
-#h2Index {
-  font-size: 2rem;
+.section1Index .carrouselIndex {
+  width: 370px;
+  margin: 0 auto;
+}
+
+.section1Index .carrouselIndex #h2Index {
+  font-size: 2.4rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   color: darkgoldenrod;
 }
 
-.tituloNoticiaCarrousel {
+.section1Index .carrouselIndex .tituloNoticiaCarrousel {
   font-family: "Roboto", sans-serif;
   color: whitesmoke;
   font-weight: 600;
@@ -117,61 +125,102 @@ footer .logo--redes a .tamano__img:hover {
   font-size: 1em;
 }
 
-.tituloNoticia {
+.section1Index .noticia {
+  background-color: #b1b4b9;
+}
+
+.section1Index .noticia .tituloNoticia {
   font-size: 1.2em;
   font-family: "Roboto", sans-serif;
-  color: burlywood;
+  color: #d18727;
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
 }
 
-.articleIndex {
+.section1Index .noticia .articleIndex {
   font-family: "Noto Sans", sans-serif;
   font-size: .8em;
   line-height: 1.6em;
 }
 
-.carrouselIndex {
-  width: 370px;
-  margin: 0 auto;
-}
-
-#asideIndex {
+#sectionIndex {
   background: -webkit-gradient(linear, left top, right top, from(#D7DDE8), to(#757F9A));
   background: linear-gradient(to right, #D7DDE8, #757F9A);
 }
 
-#asideIndex h3 {
+#sectionIndex div h3 {
   color: green;
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.tamanoVideo__index {
-  width: 15rem;
+#sectionIndex div .tamanoVideo__index {
   padding-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
-.foro {
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  color: midnightblue;
-  line-height: 1.2em;
-  text-transform: capitalize;
+@media screen and (min-width: 450px) {
+  .section1Index .carrouselIndex {
+    width: 440px;
+    margin: 0 auto;
+  }
 }
 
-.achicarTextarea {
-  width: 250px;
-  height: 350px;
+@media screen and (min-width: 576px) {
+  div .tamanoVideo__index {
+    width: 15rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div .tamanoVideo__index {
+    width: 20rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .section1Index .carrouselIndex {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .section1Index .carrouselIndex div .tituloNoticiaCarrousel {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+  }
+  .section1Index .noticia .tituloNoticia {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+  }
+  .section1Index .noticia .articleIndex {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1em;
+  }
+}
+
+.noticia {
+  background-color: #b1b4b9;
+}
+
+@media screen and (min-width: 768px) {
+  #asideIndex div .tamanoVideo__index {
+    width: 14rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  .tamanoVideo__index {
+  #asideIndex div .tamanoVideo__index {
     width: 16rem;
     padding-top: 1rem;
     margin-left: 1rem;
@@ -180,53 +229,28 @@ footer .logo--redes a .tamano__img:hover {
 }
 
 @media screen and (min-width: 1100px) {
-  #mic {
-    width: 350px;
-    height: 250px;
+  .section1Index .carrouselIndex {
+    width: 700px;
+    margin: 0 auto;
   }
-  article {
-    line-height: 2em;
-  }
-}
-
-@media screen and (min-width: 450px) {
-  .carrouselIndex {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .carrouselIndex {
-    width: 740px;
-  }
-  .tituloNoticiaCarrousel {
-    font-family: "Roboto", sans-serif;
-    font-size: 2em;
-  }
-  .tituloNoticia {
+  .section1Index .noticia .tituloNoticia {
     font-family: "Roboto", sans-serif;
     font-size: 1.6em;
   }
-  .articleIndex {
+  .section1Index .noticia .articleIndex {
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.2em;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .carrouselIndex {
-    width: 900px;
+    font-size: 1.1em;
   }
 }
 
 /* mobile first- BS - Musica*/
-.fondo--musica {
+.fondoMusica {
   background: -webkit-gradient(linear, left top, left bottom, from(#B5AC49), to(#3CA55C));
   background: linear-gradient(to bottom, #B5AC49, #3CA55C);
   min-height: 55vh;
 }
 
-.fondo--musica div .titulo__musica {
+.fondoMusica div .tituloMusica {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.5em;
@@ -244,7 +268,7 @@ footer .logo--redes a .tamano__img:hover {
           animation-delay: 2s;
 }
 
-.fondo--musica .parrafo__artistas {
+.fondoMusica .parrafoArtistas {
   font-family: "Noto Sans", sans-serif;
   font-size: .8em;
   color: black;
@@ -289,14 +313,14 @@ ul .negrita::after {
   right: -1.6em;
 }
 
-ul li a:hover {
-  color: crimson;
-}
-
-ul .temasMusica {
+ul li .temasMusica {
   color: black;
   text-decoration: none;
   margin-top: 1em;
+}
+
+ul li .temasMusica:hover {
+  color: crimson;
 }
 
 @media screen and (min-width: 450px) {
@@ -318,66 +342,58 @@ ul .temasMusica {
 }
 
 /*CONTACTOS*/
-.fondo--contacto {
-  background-image: url(../imagenes/paisaje2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top center;
-  border: 1px solid #1b5992;
+.fondoContacto {
+  background-color: #a1b5da;
 }
 
-.fondo--contacto .titulo__contacto {
+.fondoContacto .tituloContacto {
   font-family: "Roboto", sans-serif;
-  color: darkblue;
+  color: #ba0e2a;
   font-weight: normal;
   word-spacing: 0.2em;
 }
 
-.fondo--contacto div .parrafo__contacto {
+.fondoContacto div {
+  background-image: url(../imagenes/fotorapContacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+  background-position: center bottom;
+  border: 1px solid #1b5992;
+  border-radius: 3%;
+  padding: 15px;
+  opacity: 0.8;
+}
+
+.fondoContacto div .parrafoContacto {
   font-family: "Noto Sans", sans-serif;
-  color: black;
+  color: whitesmoke;
   text-align: justify;
-  line-height: 20px;
+  line-height: 30px;
   word-spacing: .5rem;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
 }
 
 #fondoForm {
   background-color: #a1b5da;
 }
 
-form {
+#fondoForm form {
   max-width: 500px;
 }
 
-/* BASES */
-.grillaBases {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "header header header" "section section aside" "section section aside" "footer footer footer";
-  gap: 5px;
+#fondoForm form .btn {
+  background-color: #446586;
+  color: whitesmoke;
+  border: rgb 27, 89, 146 1px solid;
 }
 
+/* BASES */
 #section1Bases {
-  background: -webkit-gradient(linear, left top, left bottom, from(#E1F5C4), to(#EDE574));
-  background: linear-gradient(to bottom, #E1F5C4, #EDE574);
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  background: #E1F5C4;
   grid-area: section;
 }
 
-.section--arriba {
+.sectionArriba {
   padding-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,7 +411,7 @@ form {
           align-items: center;
 }
 
-.section--arriba .__animacion {
+.sectionArriba .__animacion {
   color: #c84b31;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -443,7 +459,7 @@ form {
   }
 }
 
-.section--arriba div .titulo--bases {
+.sectionArriba div .tituloBases {
   font-size: 1.2em;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
@@ -453,9 +469,6 @@ form {
 
 #asideBases {
   background-color: #dbe6fd;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: aside;
   padding-top: 10%;
 }
@@ -467,58 +480,44 @@ form {
   text-transform: capitalize;
 }
 
-#asideBases .tamano__textarea {
+#asideBases .tamanoTextarea {
   height: 70%;
   resize: none;
 }
 
 @media only screen and (min-width: 1200px) {
-  .videos__bases {
+  .videosBases {
     width: 350px;
     height: 230px;
   }
 }
 
 /*FMS*/
-.fondo1--fms {
+.fondo1Fms {
   background: -webkit-gradient(linear, left top, right top, from(#fff), to(#076585));
   background: linear-gradient(to right, #fff, #076585);
 }
 
-.fondo1--fms .section__arriba .titulo__fms {
+.fondo1Fms .sectionArriba .tituloFms {
   color: darkslateblue;
   font-size: 1.4em;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
 
-.fondo1--fms .parrafo__fms {
+.fondo1Fms .parrafoFms {
   font-family: "Noto Sans", sans-serif;
   font-size: .8em;
-  text-align: justify;
   word-spacing: 1px;
+  line-height: 1.2rem;
   padding-bottom: 1%;
-}
-
-.separacion__pais {
-  margin-left: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-#nacionalidad {
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  margin-right: 15px;
-  margin-left: 10px;
 }
 
 #fondo2Fms {
   height: auto;
   padding-bottom: 10px;
   padding-top: 10px;
-  background-color: tan;
+  background-color: #f3edb1;
 }
 
 .tituloVideosFms {
@@ -548,7 +547,7 @@ form {
 
 @media only screen and (min-width: 990px) {
   .achicarVideosFms {
-    width: 220px;
+    width: 235px;
     height: 200px;
   }
 }
@@ -559,7 +558,17 @@ form {
     height: 200px;
   }
   #imagenesFmsIzq img, #imagenesFmsDer img {
-    width: 280px;
+    width: 220px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .achicarVideosFms {
+    width: 310px;
+    height: 200px;
+  }
+  #imagenesFmsIzq img, #imagenesFmsDer img {
+    width: 240px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -15,11 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@100&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&family=Rationale&family=Zen+Dots&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <header class="sticky-top">
+        <!-- navbar-light para menu hamburguesa pero no respeta color de hover -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -41,16 +45,16 @@
                                 href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5  agrandarItemMenu" href="paginas/musica.html">Musica</a>
+                            <a class="nav-link ms-lg-5 active  agrandarItemMenu" href="paginas/musica.html">Musica</a>
                         </li>
                         <li class="nav-item ms-lg-5 letraMenu">
-                            <a class="nav-link ms-xl-5 agrandarItemMenu" href="paginas/fms.html">FMS</a>
+                            <a class="nav-link ms-xl-5 active agrandarItemMenu" href="paginas/fms.html">FMS</a>
                         </li>
                         <li class="nav-item ms-lg-5 letraMenu">
-                            <a class="nav-link ms-xl-5 agrandarItemMenu" href="paginas/bases.html">Bases</a>
+                            <a class="nav-link ms-xl-5 active agrandarItemMenu" href="paginas/bases.html">Bases</a>
                         </li>
                         <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5 agrandarItemMenu" href="paginas/contacto.html">Contacto</a>
+                            <a class="nav-link ms-lg-5 active agrandarItemMenu" href="paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +66,7 @@
         <div class="row">
             <div class="carrouselIndex">
                 <div class=" container-fluid d-flex justify-content-center pt-1 pb-2">
-                    <h2 id="h2Index" class="pt-3 fs-2">Novedades</h2>
+                    <h2 id="h2Index" class="pt-3">Novedades</h2>
                 </div>
                 <div id="carouselExample" class="carousel carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -122,9 +126,9 @@
                 <div class="collapseNoticias container-fluid">
                     <div class="row">
                         <div class="noticia">
-                            <h4 class="tituloNoticia mb-3">Despues de caravana Wos presenta su segundo
+                            <h4 class="tituloNoticia my-3">Despues de caravana, Wos presenta su segundo
                                 album</h4>
-                            <p class="articleIndex ms-2">Mugre es un track cargado de emociones fuertes. </p>
+                            <p class="articleIndex ms-2 mt-3">Mugre es un track cargado de emociones fuertes. </p>
                             <p class="articleIndex ms-2"> Su
                                 estructura progresiva hace que
                                 sea un
@@ -158,8 +162,8 @@
                 <div class="collapseNoticias container-fluid">
                     <div class="row">
                         <div class="noticia">
-                            <h4 class="tituloNoticia mb-3">Acru presenta <strong>Dharma</strong></h4>
-                            <p class="articleIndex ms-2">Este jueves 18 de marzo se realizó el lanzamiento del primer
+                            <h4 class="tituloNoticia my-3">Acru presenta Dharma</h4>
+                            <p class="articleIndex mt-3">Este jueves 18 de marzo se realizó el lanzamiento del primer
                                 sencillo de Acru en el
                                 presente año, el autor de temas como “Animal” y “Delirio” no sacaba material a la luz
                                 desde Octubre del año 2020 cuando deleitó a sus fanáticos con el volumen 3 de su
@@ -186,7 +190,7 @@
                 <div class="collapseNoticias container-fluid">
                     <div class="row">
                         <div class="noticia">
-                            <h4 class="tituloNoticia mb-3">Residente presenta <strong>Pecador</strong></h4>
+                            <h4 class="tituloNoticia my-3">Residente presenta <strong>Pecador</strong></h4>
                             <p class="articleIndex ms-2">René Perez Joglar Residente, el rapero puertorriqueño,
                                 compositor, productor , cofundador y ex líder / vocalista de Calle 13 lanza su segundo
                                 sencillo y vídeo musical “Pecador” el cual estará incluido en su 2do álbum en solitario
@@ -216,132 +220,80 @@
         </div>
     </section>
 
-
-    <!--Section INDEX (normal) -->
-    <!--
-
-    <section class="container-fluid section1Index d-flex flex-column">
-        <div class="d-flex justify-content-center pt-1">
-            <h2 id="h2Index" class="pt-3 fs-2">Novedades</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-12 p-3 col-lg-7">
-                <h3 class="py-1 px-2 tituloArticleIndex fs-5">Wos estrena mugre</h3>
-                <article>
-                    <p class="fs-6">Mugre es un track cargado de emociones fuertes. Su estructura progresiva hace que
-                        sea un
-                        viaje
-                        con
-                        distintos parajes en las sensaciones que transmite cada compás. Muestra sentimientos como la
-                        ira
-                        y
-                        refleja la lucha interna con el ego propio y al mismo tiempo la competencia constante de
-                        egos.
-                        Combina sonidos de teclados que le dan un tinte épico, con bajos y percusiones potentes a
-                        las
-                        que se
-                        le suman guitarras eléctricas para agregarle el clima hardcore que pide la letra.
-
-                        Los cortes futuristas y la profundidad de la voz, en perfecta simbiosis con los coros góspel
-                        del
-                        final, hacen que sea una obra de arte completa y delicada. En Mugre participan Pedro
-                        Pasquale,
-                        Fran
-                        Azorai y la voz del gospel final es de la maravillosa Caterina Finocchi.</p>
-                </article>
-            </div>
-            <div class="container d-none col-lg-5 d-lg-block d-lg-flex justify-content-center">
-                <img id="mic" class="mt-5 mb-3 ms-5" src="imagenes/rapmicr.jpg" alt="microfono">
-            </div>
-        </div>
-    </section>
-    -->
-
-    <aside id="asideIndex" class="container-fluid">
-        <div class="pt-3 d-flex justify-content-center">
+    <section id="sectionIndex" class="container-fluid">
+        <div class="pt-5 pb-3 d-flex justify-content-center">
             <h3 class="fs-2">Top 10 mas reproducidos</h3>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-xl-9">
+                <div class="col-12">
                     <div class="container-fluid text-center">
                         <div class="row">
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex ">
-                                <iframe class="tamanoVideo__index " width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/S3sQ8rfy79E" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index " width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/NS0eYfz-LqM" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/c0sxCBtqUos" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index " width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/cqDASTrpFzQ" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/80Sh2X8iphw" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/S_wMY-zLKSw" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/_NTGeXbp5Mg" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/XPzCY7NDuE0" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/O23eW0j6ALA" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
-                            <div
-                                class="col-12 col-sm-6 col-md-4 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
-                                <iframe class="tamanoVideo__index" width="360" height="230"
+                            <div class="col-12 col-sm-6 col-lg-4 d-lg-flex justify-content-evenly col-xl-4 d-xl-flex">
+                                <iframe class="tamanoVideo__index mx-auto" width="300" height="230"
                                     src="https://www.youtube.com/embed/HUXE8HBTtUA?start=2" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -350,19 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="d-none d-xl-block col-xl-3 text-center d-xl-flex flex-xl-row flex-xl-nowrap align-items-xl-center">
-                    <div>
-                        <p class="foro">Comentarios/foro</p>
-                        <textarea class="achicarTextarea" name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </aside>
-
-    <!--    Sacar agregado para ejercicio de BEM (logo--redes/tamano__img (por img) )-->
+    </section>
 
     <footer
         class="container-fluid pb-2 d-flex flex-row flex-wrap justify-content-center align-items-center flex-sm-column">
@@ -371,17 +311,18 @@
                 derechos
                 reservados</p>
         </div>
-        <div class="logo--redes">
-            <a href="https://www.facebook.com/nacho.beramendi/" target="_blank"><img class="tamano__img"
+        <div class="logoredes">
+            <a href="https://www.facebook.com/nacho.beramendi/" target="_blank"><img class="tamanoImg"
                     src="logos_redes/facebook.png" alt="Facebook"></a>
-            <a href="https://open.spotify.com/user/z6bce7ccco20eway3rwqx5w5n" target="_blank"><img class="tamano__img"
+            <a href="https://open.spotify.com/user/z6bce7ccco20eway3rwqx5w5n" target="_blank"><img class="tamanoImg"
                     src="logos_redes/spotify.png" alt="Spotify"></a>
-            <a href="https://www.youtube.com"><img class="tamano__img" src="logos_redes/youtube.png" alt="youtube"></a>
-            <a href="https://www.twitter.com"><img class="tamano__img" src="logos_redes/gorjeo.png" alt="twitter"></a>
-            <a href="https://www.instagram.com/beramendinacho/?hl=es-la"><img class="tamano__img"
+            <a href="https://www.youtube.com"><img class="tamanoImg" src="logos_redes/youtube.png" alt="youtube"></a>
+            <a href="https://www.twitter.com"><img class="tamanoImg" src="logos_redes/gorjeo.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/beramendinacho/?hl=es-la"><img class="tamanoImg"
                     src="logos_redes/instagram.png" alt="instagram"></a>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>

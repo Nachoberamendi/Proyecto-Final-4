@@ -10,22 +10,23 @@ footer {
             font-weight: bold;
             font-size: .8em;  
             color: black;
-            }
         }
-    .logo--redes {
+    }
+    .logoredes {
             a {
-            .tamano__img { 
+            .tamanoImg { 
                 width: 30px;
                 border-color:transparent;
                 margin-left: 5px;
-                padding{
+                transition: transform ease-in-out 300ms ;
+                padding {
                     bottom: 1%;
-                    left: 1%;}
+                    left: 1%;
+                       }
             &:hover {
-                transform: scale(1.5);
-                transition: all 300ms ;
-                }
-                        }
-}
+                transform: scale(1.4);
+            }
+        }
     }
+}
 }

@@ -13,119 +13,166 @@
 
 .section1Index {
    background-color: $bgsectionIndex;
-}
-#h2Index {
-    font-size: $tamanoFuente*2;
-    font-family: $robotoTitulo;
-    font-weight:bold;
-    letter-spacing: 1px;
-    color:darkgoldenrod;
-}
-
-.tituloNoticiaCarrousel {
-    font-family: $robotoTitulo;
-    color: whitesmoke;
-    font-weight: 600;
-    line-height: 1.5em;
-    font-size: 1em;
-}
-.tituloNoticia {
-    font-size: 1.2em;
-    font-family: $robotoTitulo;
-    color:burlywood;
-    font-weight: 600;
-    line-height: 1.5em;
-    text-align: center;
-}
-.articleIndex{
-    font-family: $notoTextos;
-    font-size: .8em;
-    line-height: 1.6em;
-}
-.carrouselIndex {
-    width:370px;
-    margin: 0 auto;
-}
-#asideIndex {
-    background: $bgasideIndex ;
-    h3{
-        color: green ;
-        font-family: $robotoTitulo;
-        font-size: 1.8rem;
-        font-weight: bold ;
-       
-    }
-}
-.tamanoVideo__index {
-    width: 15rem;
-    padding-top: 1rem ;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-.foro {
-    font-size: 1.2rem;
-    font-family: $robotoTitulo;
-    font-weight: 600;
-    color: midnightblue;
-    line-height: 1.2em;
-    text-transform: capitalize;
-}
-.achicarTextarea {
-    width: 250px;
-    height: 350px;
-}
-
-@media screen and (min-width: 1000px) {
-    .tamanoVideo__index {
-        width: 16rem;
-        padding-top: 1rem ;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
-}
-@media screen and (min-width: 1100px) { 
-    #mic {
-        width: 350px;
-        height: 250px;
+   .carrouselIndex {
+        width:370px;
+        margin: 0 auto;
+        #h2Index {
+            font-size: $tamanoFuente*1.2;
+            font-family: $robotoTitulo;
+            font-weight:bold;
+            letter-spacing: 1px;
+            color:darkgoldenrod;
         }
-     article {
-        line-height: 2em;
-     }   
+        .tituloNoticiaCarrousel {
+            font-family: $robotoTitulo;
+            color: whitesmoke;
+            font-weight: 600;
+            line-height: 1.5em;
+            font-size: 1em;
+        }
+    }
+    .noticia {
+        background-color: $bgacordeonIndex;
+        .tituloNoticia {
+            font-size: 1.2em;
+            font-family: $robotoTitulo;
+            color:rgb(209, 135, 39);
+            font-weight: 600;
+            line-height: 1.5em;
+            text-align: center;
+        }
+        .articleIndex{
+            font-family: $notoTextos;
+            font-size: .8em;
+            line-height: 1.6em;
+        }
+    }
 }
+#sectionIndex {
+    background: $bgasideIndex ;
+    div {
+        h3 {
+            color: green ;
+            font-family: $robotoTitulo;
+            font-size: 1.8rem;
+            font-weight: bold ;
+        }
+    }
+    div {
+        .tamanoVideo__index {
+            padding-top: 1rem ;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 @media screen and (min-width: 450px) {
-    .carrouselIndex {
-     width: 450px;
-                    }
-  }
+    .section1Index {
+        .carrouselIndex {
+             width:440px;
+             margin: 0 auto;
+            }
+        }
+    }
+@media screen and (min-width: 576px) {
+    div {
+        .tamanoVideo__index {
+            width: 15rem;
+            padding-top: 1rem ;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    div {
+        .tamanoVideo__index {
+            width: 20rem;
+            padding-top: 1rem ;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
 @media screen and (min-width: 750px) {
-    .carrouselIndex {
-     width: 740px;
+    .section1Index {
+        .carrouselIndex {
+             width:500px;
+             margin: 0 auto;
+             div {
+                .tituloNoticiaCarrousel {
+                    font-family: $robotoTitulo;
+                    font-size: 2em;
+                }
+            }
+        }
+    .noticia {
+        .tituloNoticia {
+            font-family: $robotoTitulo;
+            font-size: 1.4em;
+        }
+        .articleIndex {
+            font-family: $notoTextos;
+            font-size: 1em;
+            // color:whitesmoke;
+        }
     }
-    .tituloNoticiaCarrousel {
-        font-family: $robotoTitulo;
-        font-size: 2em;
+}
+}
+.noticia {
+    background-color: $bgacordeonIndex;
+}
+
+@media screen and (min-width: 768px) {
+    #asideIndex {
+        div {
+            .tamanoVideo__index {
+                width: 14rem;
+                padding-top: 1rem ;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
     }
-    .tituloNoticia {
-        font-family: $robotoTitulo;
-        font-size: 1.6em;
+}
+@media screen and (min-width: 1000px) {
+    #asideIndex {
+        div {
+            .tamanoVideo__index {
+                width: 16rem;
+                padding-top: 1rem ;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
     }
-    .articleIndex {
-        font-family: $notoTextos;
-        font-size: 1.2em;
+}
+@media screen and (min-width: 1100px) {
+    .section1Index {
+        .carrouselIndex {
+            width:700px;
+            margin: 0 auto;
+        }
+    .noticia {
+        .tituloNoticia {
+            font-family: $robotoTitulo;
+            font-size: 1.6em;
+        }
+        .articleIndex {
+            font-family: $notoTextos;
+            font-size: 1.1em;
+        }
     }
-  }
-  @media screen and (min-width: 1100px) {
-    .carrouselIndex {
-        width: 900px
-    }
+}
 }
 /* mobile first- BS - Musica*/
 
-.fondo--musica {
+.fondoMusica {
    background: $bgfondoMusica;
    min-height: 55vh;
     div{ 
-        .titulo__musica {
+        .tituloMusica {
             font-family: $robotoTitulo;
             font-weight: bold;
             font-size: 1.5em;
@@ -136,9 +183,9 @@
             animation-timing-function: ease-in;
             animation-duration: 4s;
             animation-delay: 2s;
-                        }
+        }
     }
-    .parrafo__artistas {
+    .parrafoArtistas {
         font-family: $notoTextos;
         font-size: .8em;
         color:black ;
@@ -155,7 +202,7 @@ a {
         height: 200px;
         border: teal 4px solid;
         opacity: 0.5;
-        &:hover{
+        &:hover {
             transform: scale(1.05);
             transition: all 200ms;
             border:rgb(70, 3, 3) solid 4px;
@@ -165,7 +212,7 @@ a {
 } 
 ul {
     list-style: none;
-    .negrita{
+    .negrita {
         font-weight: 600;
         color: brown;
         position: relative;
@@ -177,29 +224,27 @@ ul {
         }
     }
     li {
-        a {
+        .temasMusica {
+            color: black;
+            text-decoration: none;
+            margin-top: 1em;
             &:hover {
                 color: crimson;
             }
         }
     }
-    .temasMusica {
-        color: black;
-        text-decoration: none;
-        margin-top: 1em;
-    }
 }
 
 @media screen and (min-width: 450px) {
     .sizeCarrousel {
-     width: 450px;
-                    }
-  }
+        width: 450px;
+    }
+}
 @media screen and (min-width: 750px) {
     .sizeCarrousel {
-     width: 800px;
-                    }
-  } 
+        width: 800px;
+    }
+} 
 @media screen and (max-width:576px) {
     .titulo__musica {
         text-align: center;
@@ -208,59 +253,52 @@ ul {
 
                /*CONTACTOS*/
 
-.fondo--contacto {
-    background-image: url(../imagenes/paisaje2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top center;
-    border: 1px solid rgb(27, 89, 146);
-    .titulo__contacto {   
+.fondoContacto {
+    background-color: $bgformulario;
+    .tituloContacto {   
         font-family: $robotoTitulo; 
-        color: darkblue;
+        color: #ba0e2a;
         font-weight: normal;
         word-spacing: 0.2em;
         }
     div {
-        .parrafo__contacto {
+        background-image: url(../imagenes/fotorapContacto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:inherit;
+        background-position: center bottom;
+        border: 1px solid rgb(27, 89, 146);
+        border-radius: 3%;
+        padding: 15px;
+        opacity: 0.8;
+        .parrafoContacto {
             font-family: $notoTextos;
-            color: black;
+            color: whitesmoke;
             text-align:justify;
-            line-height: 20px;
+            line-height: 30px;
             word-spacing: .5rem;
-            font-weight: bold;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 10px;
-          }     
-       }
+        }     
+    }
 }
 #fondoForm { 
    background-color: $bgformulario;
-}
-form {
+   form {
     max-width: 500px;
+    .btn {
+        background-color:rgb(68, 101, 134);
+        color:whitesmoke;
+        border:rgb (27, 89, 146)  1px solid ;
+    }
+    }
 }
 
             /* BASES */ 
-
-.grillaBases {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto ;
-    grid-template-areas: 
-            "header header header"
-            "section section aside"
-            "section section aside"
-            "footer footer footer" ;
-    gap: 5px ;
-            }
+ 
 #section1Bases {
                 background: $bgSection1Bases;
                 grid-area: section;
-              }
-.section--arriba {
+}
+.sectionArriba {
     padding-top: 1em;
     display: flex;
     flex-direction: column;
@@ -280,24 +318,23 @@ form {
         animation-timing-function: ease-in;
         animation-duration: 4s;
         animation-delay: 2s;
-                }
+    }
                 @keyframes animacion {
-                    0%{ width: 200px; }
-                    50%{ width: 300px;
+                    0% { width: 200px; }
+                    50% { width: 300px;
                       color: red; }
-                    100%{ width: 200px;
-                      color:green;}
+                    100% { width: 200px;
+                      color:green; }
                 }
 div {
-    .titulo--bases {
+    .tituloBases {
         font-size: 1.2em;
         font-family: $robotoTitulo;
         font-weight: 800;
         color:darkgoldenrod ;
         text-align: center;
-                    }
+    }
 }
-
 }
 #asideBases {
     background-color: $bgasideBases;
@@ -308,60 +345,44 @@ div {
         color: midnightblue;
         line-height: 1.4em;
         text-transform: capitalize;
-         }
-    .tamano__textarea {
+    }
+    .tamanoTextarea {
         height: 70%;
         resize: none;
-                    }
-
+    }
 } 
 @media only screen and (min-width:1200px) { 
-    .videos__bases {
+    .videosBases {
         width: 350px;
         height: 230px;
-                    }
+    }
 }
 
             /*FMS*/
-.fondo1--fms {
+.fondo1Fms {
     background: $bg1Fms;
-    .section__arriba{
-                    .titulo__fms {
+    .sectionArriba{
+                    .tituloFms {
                         color:darkslateblue;
                         font-size: 1.4em;
                         font-weight: bold;
                         font-family: $robotoTitulo;
-                                }
-                }
-    
-    .parrafo__fms {
+                    }
+    }
+    .parrafoFms {
         font-family: $notoTextos ;
         font-size: .8em;
-        text-align: justify;
         word-spacing: 1px;
+        line-height: 1.2rem;
         padding-bottom: 1%;
-                }
-            }
-
-    .separacion__pais {
-        margin-left: 1%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-                    }
-            
-#nacionalidad {
-    font-size: 18px;
-    font-family: $robotoTitulo;
-    font-weight: 900;
-    margin-right: 15px;
-    margin-left: 10px;
-             }
-
+    }
+}
 #fondo2Fms {
     height: auto;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: tan;
+    // background-color: rgb(240, 204, 158);
+    background-color: #f3edb1;
 }
 
 .tituloVideosFms {
@@ -387,7 +408,7 @@ div {
 }
 @media only screen and (min-width:990px) { 
     .achicarVideosFms {
-        width: 220px;
+        width: 235px;
         height: 200px;
     }
 }     
@@ -397,9 +418,19 @@ div {
         height: 200px;
     }
     #imagenesFmsIzq img , #imagenesFmsDer img { 
-        width: 280px;
+        width: 220px;
+    }
+} 
+@media only screen and (min-width:1300px) { 
+    .achicarVideosFms {
+        width: 310px;
+        height: 200px;
+    }
+    #imagenesFmsIzq img , #imagenesFmsDer img { 
+        width: 240px;
     }
 }           
+           
  
 
 

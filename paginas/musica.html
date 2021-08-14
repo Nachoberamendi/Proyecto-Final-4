@@ -13,6 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins:wght@100&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&family=Rationale&family=Zen+Dots&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -40,21 +43,21 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul
                         class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row flex-nowrap justify-content-evenly align-items-center">
-                        <li class="nav-item ms-xl-5 letraMenu">
+                        <li class="nav-item ms-xl-5 active letraMenu">
                             <a class="nav-link ms-lg-5 active agrandarItemMenu" aria-current="page"
                                 href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5  agrandarItemMenu" href="musica.html">Musica</a>
+                            <a class="nav-link ms-lg-5 active agrandarItemMenu" href="musica.html">Musica</a>
                         </li>
                         <li class="nav-item ms-lg-5 letraMenu">
                             <a class="nav-link ms-xl-5 agrandarItemMenu" href="fms.html">FMS</a>
                         </li>
                         <li class="nav-item ms-lg-5 letraMenu">
-                            <a class="nav-link ms-xl-5 agrandarItemMenu" href="bases.html">Bases</a>
+                            <a class="nav-link ms-xl-5 active agrandarItemMenu" href="bases.html">Bases</a>
                         </li>
                         <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5 agrandarItemMenu" href="contacto.html">Contacto</a>
+                            <a class="nav-link ms-lg-5 active agrandarItemMenu" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -62,13 +65,11 @@
         </nav>
     </header>
 
-    <!--    Sacar clase agregada para ejercicio de BEM (/fondo--musica/titulo__musica/parrafo__artistas)-->
-
-    <section class="fondo--musica">
+    <section class="fondoMusica">
         <div class="container d-flex justify-content-center align-items-center">
-            <h2 class=" wow animate__animated animate__flipInX pt-3 __animacion titulo__musica">Artistas</h2>
+            <h2 class=" wow animate__animated animate__flipInX pt-3 __animacion tituloMusica">Artistas</h2>
         </div>
-        <p class="parrafo__artistas m-3 fs-6">Les mostramos los nombres de algunos temas de los mejores artistas de Rap
+        <p class="parrafoArtistas m-3 fs-6">Les mostramos los nombres de algunos temas de los mejores artistas de Rap
             sudamericanos. Haga click en la foto para acceder a su discografia.</p>
 
         <div class="d-none d-lg-flex flex-lg-row justify-content-lg-evenly mt-5">
@@ -398,19 +399,20 @@
             <p class="ft pt-2 px-2 text-center fs-6">Sitio desarrollado por Ignacio Beramendi. © Todos los derechos
                 reservados</p>
         </div>
-        <div class="logo--redes">
-            <a href="https://www.facebook.com/nacho.beramendi/" target="_blank"><img class="tamano__img"
+        <div class="logoredes">
+            <a href="https://www.facebook.com/nacho.beramendi/" target="_blank"><img class="tamanoImg"
                     src="../logos_redes/facebook.png" alt="icono Facebook"></a>
-            <a href="https://open.spotify.com/user/z6bce7ccco20eway3rwqx5w5n" target="_blank"><img class="tamano__img"
+            <a href="https://open.spotify.com/user/z6bce7ccco20eway3rwqx5w5n" target="_blank"><img class="tamanoImg"
                     src="../logos_redes/spotify.png" alt="icono Spotify"></a>
-            <a href="https://www.youtube.com"><img class="tamano__img" src="../logos_redes/youtube.png"
+            <a href="https://www.youtube.com"><img class="tamanoImg" src="../logos_redes/youtube.png"
                     alt="icono youtube"></a>
-            <a href="https://www.twitter.com"><img class="tamano__img" src="../logos_redes/gorjeo.png"
+            <a href="https://www.twitter.com"><img class="tamanoImg" src="../logos_redes/gorjeo.png"
                     alt="icono twitter"></a>
-            <a href="https://www.instagram.com/beramendinacho/?hl=es-la"><img class="tamano__img"
+            <a href="https://www.instagram.com/beramendinacho/?hl=es-la"><img class="tamanoImg"
                     src="../logos_redes/instagram.png" alt="icono instagram"></a>
         </div>
     </footer>
+
 
 
 
