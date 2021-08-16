@@ -4,10 +4,13 @@
 header {
   background: -webkit-gradient(linear, left top, right top, from(#854953), to(#ffafbd));
   background: linear-gradient(to right, #854953, #ffafbd);
-  grid-area: header;
   border-top: solid 1px  #BF1363;
   border-bottom: solid 1px  #BF1363;
   z-index: 1;
+}
+
+header .navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 header h1 {
@@ -29,12 +32,13 @@ header div ul .letraMenu {
 }
 
 header div ul .letraMenu .agrandarItemMenu {
-  -webkit-transition: -webkit-transform ease-in-out 350ms;
-  transition: -webkit-transform ease-in-out 350ms;
-  transition: transform ease-in-out 350ms;
-  transition: transform ease-in-out 350ms, -webkit-transform ease-in-out 350ms;
+  -webkit-transition: -webkit-transform ease-in-out 400ms;
+  transition: -webkit-transform ease-in-out 400ms;
+  transition: transform ease-in-out 400ms;
+  transition: transform ease-in-out 400ms, -webkit-transform ease-in-out 400ms;
   color: black;
-  font-weight: 500;
+  font-size: 0.7em;
+  font-family: "Zen Dots", sans-serif;
 }
 
 header div ul .letraMenu .agrandarItemMenu:hover {
@@ -43,11 +47,50 @@ header div ul .letraMenu .agrandarItemMenu:hover {
   color: #E1F5C4;
 }
 
+@media screen and (min-width: 578px) {
+  header div ul .letraMenu {
+    font-size: 1.1em;
+  }
+  header div ul .letraMenu .agrandarItemMenu {
+    -webkit-transition: -webkit-transform ease-in-out 400ms;
+    transition: -webkit-transform ease-in-out 400ms;
+    transition: transform ease-in-out 400ms;
+    transition: transform ease-in-out 400ms, -webkit-transform ease-in-out 400ms;
+    color: #2b2727;
+    font-size: 1em;
+    font-family: "Zen Dots", sans-serif;
+  }
+  header div ul .letraMenu .agrandarItemMenu:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    color: #E1F5C4;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  header div ul .letraMenu {
+    font-size: 1.1em;
+  }
+  header div ul .letraMenu .agrandarItemMenu {
+    -webkit-transition: -webkit-transform ease-in-out 400ms;
+    transition: -webkit-transform ease-in-out 400ms;
+    transition: transform ease-in-out 400ms;
+    transition: transform ease-in-out 400ms, -webkit-transform ease-in-out 400ms;
+    color: #2b2727;
+    font-size: 1.1em;
+    font-family: "Zen Dots", sans-serif;
+  }
+  header div ul .letraMenu .agrandarItemMenu:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    color: #E1F5C4;
+  }
+}
+
 footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#dae2f8), to(#d6a4a4));
   background: linear-gradient(to bottom, #dae2f8, #d6a4a4);
   border: #d6a4a4 2px solid;
-  grid-area: footer;
   min-height: 60px;
 }
 
@@ -109,7 +152,7 @@ footer .logoredes a .tamanoImg:hover {
   margin: 0 auto;
 }
 
-.section1Index .carrouselIndex #h2Index {
+.section1Index .carrouselIndex div #h2Index {
   font-size: 2.4rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -117,12 +160,50 @@ footer .logoredes a .tamanoImg:hover {
   color: darkgoldenrod;
 }
 
-.section1Index .carrouselIndex .tituloNoticiaCarrousel {
+.section1Index .carrouselIndex .carousel-inner .tamanoCarrousel img {
+  border-radius: 10px;
+}
+
+.section1Index .carrouselIndex .carousel-inner .tamanoCarrousel .carousel-caption {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
+.section1Index .carrouselIndex .carousel-inner .tamanoCarrousel .carousel-caption .tituloNoticiaCarrousel {
   font-family: "Roboto", sans-serif;
   color: whitesmoke;
   font-weight: 600;
-  line-height: 1.5em;
+  line-height: 1.4em;
   font-size: 1em;
+}
+
+.section1Index .carrouselIndex .carousel-zoom .carousel-item > img {
+  -webkit-animation: zoom 40s forwards;
+          animation: zoom 40s forwards;
+  width: 100%;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+  }
 }
 
 .section1Index .noticia {
@@ -165,7 +246,6 @@ footer .logoredes a .tamanoImg:hover {
 @media screen and (min-width: 450px) {
   .section1Index .carrouselIndex {
     width: 440px;
-    margin: 0 auto;
   }
 }
 
@@ -178,23 +258,21 @@ footer .logoredes a .tamanoImg:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
-  div .tamanoVideo__index {
-    width: 20rem;
-    padding-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
 @media screen and (min-width: 750px) {
   .section1Index .carrouselIndex {
     width: 500px;
-    margin: 0 auto;
   }
-  .section1Index .carrouselIndex div .tituloNoticiaCarrousel {
+  .section1Index .carrouselIndex .carousel-inner .tamanoCarrousel .carousel-caption {
+    position: absolute;
+    left: 7.5%;
+    right: 7.5%;
+  }
+  .section1Index .carrouselIndex .carousel-inner .tamanoCarrousel .carousel-caption .tituloNoticiaCarrousel {
     font-family: "Roboto", sans-serif;
-    font-size: 2em;
+    color: whitesmoke;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-size: 1.5em;
   }
   .section1Index .noticia .tituloNoticia {
     font-family: "Roboto", sans-serif;
@@ -206,13 +284,9 @@ footer .logoredes a .tamanoImg:hover {
   }
 }
 
-.noticia {
-  background-color: #b1b4b9;
-}
-
 @media screen and (min-width: 768px) {
-  #asideIndex div .tamanoVideo__index {
-    width: 14rem;
+  div .tamanoVideo__index {
+    width: 20rem;
     padding-top: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
@@ -245,8 +319,8 @@ footer .logoredes a .tamanoImg:hover {
 
 /* mobile first- BS - Musica*/
 .fondoMusica {
-  background: -webkit-gradient(linear, left top, left bottom, from(#B5AC49), to(#3CA55C));
-  background: linear-gradient(to bottom, #B5AC49, #3CA55C);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c9657), to(#ccc35b));
+  background: linear-gradient(to bottom, #3c9657, #ccc35b);
   min-height: 55vh;
 }
 
@@ -275,19 +349,19 @@ footer .logoredes a .tamanoImg:hover {
   font-weight: normal;
 }
 
-.sizeCarrousel {
-  width: 370px;
-  margin: 0 auto;
+div .artistasMusica {
+  font-family: "Zen Dots", sans-serif;
+  font-size: 1.4em;
 }
 
-a .imagenes {
+div a .imagenes {
   width: 300px;
   height: 200px;
   border: teal 4px solid;
   opacity: 0.5;
 }
 
-a .imagenes:hover {
+div a .imagenes:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: all 200ms;
@@ -296,43 +370,31 @@ a .imagenes:hover {
   opacity: 1;
 }
 
-ul {
+div ul {
   list-style: none;
 }
 
-ul .negrita {
+div ul .negrita {
   font-weight: 600;
   color: brown;
   position: relative;
   margin-top: .8em;
 }
 
-ul .negrita::after {
+div ul .negrita::after {
   content: url(../logos_redes/spotify.svg);
   position: absolute;
-  right: -1.6em;
+  right: 4em;
 }
 
-ul li .temasMusica {
+div ul li .temasMusica {
   color: black;
   text-decoration: none;
   margin-top: 1em;
 }
 
-ul li .temasMusica:hover {
+div ul li .temasMusica:hover {
   color: crimson;
-}
-
-@media screen and (min-width: 450px) {
-  .sizeCarrousel {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .sizeCarrousel {
-    width: 800px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -390,7 +452,6 @@ ul li .temasMusica:hover {
 /* BASES */
 #section1Bases {
   background: #E1F5C4;
-  grid-area: section;
 }
 
 .sectionArriba {
@@ -459,36 +520,47 @@ ul li .temasMusica:hover {
   }
 }
 
+.sectionArriba .borderBases {
+  border-bottom: 2px solid #721010;
+  margin-bottom: 10px;
+}
+
 .sectionArriba div .tituloBases {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   color: darkgoldenrod;
   text-align: center;
 }
 
-#asideBases {
-  background-color: #dbe6fd;
-  grid-area: aside;
-  padding-top: 10%;
+.sectionArriba div div .descripcionBases {
+  color: maroon;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
 }
 
-#asideBases .__foro {
-  font-family: Arial, Helvetica, sans-serif;
-  color: midnightblue;
-  line-height: 1.4em;
-  text-transform: capitalize;
+.sectionArriba div div .artistasBases {
+  text-decoration: none;
+  color: black;
+  font-family: "Zen Dots", sans-serif;
+  line-height: 1.5em;
 }
 
-#asideBases .tamanoTextarea {
-  height: 70%;
-  resize: none;
+.sectionArriba div div .artistasBases:hover {
+  color: crimson;
 }
 
 @media only screen and (min-width: 1200px) {
   .videosBases {
     width: 350px;
     height: 230px;
+  }
+  div .descripcionBases {
+    font-size: 2em;
+  }
+  div .artistasBases {
+    font-size: 1.2em;
   }
 }
 

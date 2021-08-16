@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta name="description" content="Historia, Novedades del Rap, mejores videos de la semana.">
-    <meta name="keyword" content="Rap, latino, freestyle, fms, bases, hip hop, artistas">
+    <meta name="description"
+        content="Historia, Novedades del Rap y del freestyle. Escuchá los mejores minutos de la semana.">
+    <meta name="keyword" content="Rap, latino, freestyle, fms, bases, hip hop, artistas, estrenos.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,14 +24,13 @@
 
 <body>
     <header class="sticky-top">
-        <!-- navbar-light para menu hamburguesa pero no respeta color de hover -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo wow animate__animated animate__rotateInDownLeft agrandarLogo"
                         src="imagenes/Logo_sanimacion.png" alt="logo" width="30" height="24">
                 </a>
-                <h1 class="d-none d-sm-block ms-5">
+                <h1 class="d-none d-sm-block ms-5 ps-3">
                     Solo Rap
                 </h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -40,21 +40,23 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul
                         class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row flex-nowrap justify-content-evenly align-items-center">
-                        <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5 active agrandarItemMenu" aria-current="page"
+                        <li class="nav-item ms-xl-4 letraMenu">
+                            <a class="nav-link ms-sm-5 active agrandarItemMenu" aria-current="page"
                                 href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5 active  agrandarItemMenu" href="paginas/musica.html">Musica</a>
+                        <li class="nav-item ms-xl-3 letraMenu">
+                            <a class="nav-link active ms-4 ms-xl-5 agrandarItemMenu"
+                                href="paginas/musica.html">Musica</a>
                         </li>
-                        <li class="nav-item ms-lg-5 letraMenu">
-                            <a class="nav-link ms-xl-5 active agrandarItemMenu" href="paginas/fms.html">FMS</a>
+                        <li class="nav-item ms-xl-3 letraMenu">
+                            <a class="nav-link active ms-4 ms-xl-5 agrandarItemMenu" href="paginas/fms.html">FMS</a>
                         </li>
-                        <li class="nav-item ms-lg-5 letraMenu">
-                            <a class="nav-link ms-xl-5 active agrandarItemMenu" href="paginas/bases.html">Bases</a>
+                        <li class="nav-item ms-xl-3 letraMenu">
+                            <a class="nav-link active ms-4 ms-xl-5 agrandarItemMenu" href="paginas/bases.html">Bases</a>
                         </li>
-                        <li class="nav-item ms-xl-5 letraMenu">
-                            <a class="nav-link ms-lg-5 active agrandarItemMenu" href="paginas/contacto.html">Contacto</a>
+                        <li class="nav-item ms-xl-4 letraMenu">
+                            <a class="nav-link active ms-3 ms-xl-5 agrandarItemMenu"
+                                href="paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -64,11 +66,11 @@
 
     <section class="container-fluid col-12 section1Index pb-4">
         <div class="row">
-            <div class="carrouselIndex">
+            <div class="carrouselIndex container">
                 <div class=" container-fluid d-flex justify-content-center pt-1 pb-2">
                     <h2 id="h2Index" class="pt-3">Novedades</h2>
                 </div>
-                <div id="carouselExample" class="carousel carousel slide" data-bs-ride="carousel">
+                <div id="carouselExample" class="carousel carousel slide carousel-zoom" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -78,16 +80,16 @@
                             aria-current="true" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="20000">
+                        <div class="carousel-item active tamanoCarrousel" data-bs-interval="10000">
                             <a href="#collapseUno" data-bs-toggle="collapse" aria-expanded="false"
                                 aria-controls="collapseUno">
                                 <img src="imagenes/wosmugre.jpg" class="d-block w-100" alt="foto wos">
                             </a>
-                            <div class="carousel-caption d-block py-5">
+                            <div class="carousel-caption text-center d-block py-5">
                                 <h3 class="tituloNoticiaCarrousel">Wos estrena Mugre</h3>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="20000">
+                        <div class="carousel-item tamanoCarrousel" data-bs-interval="10000">
                             <a href="#collapseDos" data-bs-toggle="collapse" aria-expanded="false"
                                 aria-controls="collapseDos">
                                 <img src="imagenes/acrunoticia.jpg" class="d-block w-100" alt="foto acru">
@@ -96,7 +98,7 @@
                                 <h3 class="tituloNoticiaCarrousel">Dharma el nuevo single de Acru</h3>
                             </div>
                         </div>
-                        <div class="carousel-item" data-bs-interval="20000">
+                        <div class="carousel-item tamanoCarrousel" data-bs-interval="10000">
                             <a href="#collapseTres" data-bs-toggle="collapse" aria-expanded="false"
                                 aria-controls="collapseDos">
                                 <img src="imagenes/pecador.jpg" class="d-block w-100" alt="foto Residente">

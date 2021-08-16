@@ -1,9 +1,13 @@
 header{
     background: $bgHeader;
-    grid-area: header;
     border-top: solid 1px  #BF1363;
     border-bottom: solid 1px  #BF1363;
     z-index: 1;
+    .navbar{
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
     h1 {
         font-family: $soloRapTit;
         font-weight: 900;
@@ -22,9 +26,10 @@ header{
             .letraMenu {
                 font-size: 1.1em;  
                 .agrandarItemMenu {
-                    transition: transform ease-in-out 350ms ;
+                    transition: transform ease-in-out 400ms ;
                     color: black;
-                    font-weight:500;
+                    font-size: 0.7em;
+                    font-family: $soloRapTit;
                     &:hover {
                         transform: scale(1.4);
                         color: $bgSection1Bases;
@@ -35,4 +40,47 @@ header{
         } 
     }
 }
-          
+@media screen and (min-width: 578px) {
+header{
+    div { 
+        ul {
+            .letraMenu {
+                font-size: 1.1em;  
+                .agrandarItemMenu {
+                    transition: transform ease-in-out 400ms ;
+                    color: rgb(43, 39, 39);
+                    font-size: 1em;
+                    font-family: $soloRapTit;
+                    &:hover {
+                        transform: scale(1.4);
+                        color: $bgSection1Bases;
+                        ;
+                    }
+                }  
+            } 
+        } 
+    }
+}
+}
+@media screen and (min-width: 1150px) {
+    header{
+        div { 
+            ul {
+                .letraMenu {
+                    font-size: 1.1em;  
+                    .agrandarItemMenu {
+                        transition: transform ease-in-out 400ms ;
+                        color: rgb(43, 39, 39);
+                        font-size: 1.1em;
+                        font-family: $soloRapTit;
+                        &:hover {
+                            transform: scale(1.4);
+                            color: $bgSection1Bases;
+                            ;
+                        }
+                    }  
+                } 
+            } 
+        }
+    }
+    }

@@ -16,19 +16,47 @@
    .carrouselIndex {
         width:370px;
         margin: 0 auto;
-        #h2Index {
-            font-size: $tamanoFuente*1.2;
-            font-family: $robotoTitulo;
-            font-weight:bold;
-            letter-spacing: 1px;
-            color:darkgoldenrod;
+        div {
+            #h2Index {
+                font-size: $tamanoFuente*1.2;
+                font-family: $robotoTitulo;
+                font-weight:bold;
+                letter-spacing: 1px;
+                color:darkgoldenrod;
+            }
         }
-        .tituloNoticiaCarrousel {
-            font-family: $robotoTitulo;
-            color: whitesmoke;
-            font-weight: 600;
-            line-height: 1.5em;
-            font-size: 1em;
+        .carousel-inner {
+            .tamanoCarrousel {
+                img {
+                    border-radius: 10px;
+                }
+                .carousel-caption {
+                    position: absolute;
+                    left: 50%;
+                    right: 50%;
+                    .tituloNoticiaCarrousel {
+                        font-family: $robotoTitulo;
+                        color: whitesmoke;
+                        font-weight: 600;
+                        line-height: 1.4em;
+                        font-size: 1em;
+                    }
+                }
+            } 
+        }
+        .carousel-zoom {
+			.carousel-item > img {
+				animation: zoom 40s forwards;
+				width: 100%;
+			}
+		}
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(1 , 1);
+        }
+        to {
+            transform: scale(1.25 , 1.25);
         }
     }
     .noticia {
@@ -71,10 +99,9 @@
     .section1Index {
         .carrouselIndex {
              width:440px;
-             margin: 0 auto;
-            }
         }
     }
+ }
 @media screen and (min-width: 576px) {
     div {
         .tamanoVideo__index {
@@ -85,26 +112,26 @@
         }
     }
 }
-@media screen and (min-width: 768px) {
-    div {
-        .tamanoVideo__index {
-            width: 20rem;
-            padding-top: 1rem ;
-            margin-left: 1rem;
-            margin-bottom: 1rem;
-        }
-    }
-}
+
 @media screen and (min-width: 750px) {
     .section1Index {
         .carrouselIndex {
              width:500px;
-             margin: 0 auto;
-             div {
-                .tituloNoticiaCarrousel {
-                    font-family: $robotoTitulo;
-                    font-size: 2em;
-                }
+             .carousel-inner {
+                .tamanoCarrousel {
+                    .carousel-caption {
+                        position: absolute;
+                        left: 7.5%;
+                        right: 7.5%;
+                        .tituloNoticiaCarrousel {
+                            font-family: $robotoTitulo;
+                            color: whitesmoke;
+                            font-weight: 600;
+                            line-height: 1.4em;
+                            font-size: 1.5em;
+                        }
+                    }
+                } 
             }
         }
     .noticia {
@@ -115,24 +142,17 @@
         .articleIndex {
             font-family: $notoTextos;
             font-size: 1em;
-            // color:whitesmoke;
         }
     }
 }
 }
-.noticia {
-    background-color: $bgacordeonIndex;
-}
-
 @media screen and (min-width: 768px) {
-    #asideIndex {
-        div {
-            .tamanoVideo__index {
-                width: 14rem;
-                padding-top: 1rem ;
-                margin-left: 1rem;
-                margin-bottom: 1rem;
-            }
+    div {
+        .tamanoVideo__index {
+            width: 20rem;
+            padding-top: 1rem ;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -192,59 +212,50 @@
         font-weight: normal;
     }     
 }
-.sizeCarrousel {
-    width: 370px;
-    margin: 0 auto;
-}
-a {
-    .imagenes {
-        width: 300px; 
-        height: 200px;
-        border: teal 4px solid;
-        opacity: 0.5;
-        &:hover {
-            transform: scale(1.05);
-            transition: all 200ms;
-            border:rgb(70, 3, 3) solid 4px;
-            opacity: 1;
-        }
+div {
+    .artistasMusica {
+        font-family: $soloRapTit;
+        font-size: 1.4em;
     }
-} 
-ul {
-    list-style: none;
-    .negrita {
-        font-weight: 600;
-        color: brown;
-        position: relative;
-        margin-top: .8em;
-        &::after {
-            content: url(../logos_redes/spotify.svg);
-            position: absolute;
-            right:-1.6em;
-        }
-    }
-    li {
-        .temasMusica {
-            color: black;
-            text-decoration: none;
-            margin-top: 1em;
+    a {
+        .imagenes {
+            width: 300px; 
+            height: 200px;
+            border: teal 4px solid;
+            opacity: 0.5;
             &:hover {
-                color: crimson;
+                transform: scale(1.05);
+                transition: all 200ms;
+                border:rgb(70, 3, 3) solid 4px;
+                opacity: 1;
             }
         }
     }
+    ul {
+        list-style: none;
+        .negrita {
+            font-weight: 600;
+            color: brown;
+            position: relative;
+            margin-top: .8em;
+            &::after {
+                content: url(../logos_redes/spotify.svg);
+                position: absolute;
+                right:4em;
+            }
+        }
+        li {
+            .temasMusica {
+                color: black;
+                text-decoration: none;
+                margin-top: 1em;
+                &:hover {
+                    color: crimson;
+                }
+            }
+        }
+    } 
 }
-
-@media screen and (min-width: 450px) {
-    .sizeCarrousel {
-        width: 450px;
-    }
-}
-@media screen and (min-width: 750px) {
-    .sizeCarrousel {
-        width: 800px;
-    }
-} 
 @media screen and (max-width:576px) {
     .titulo__musica {
         text-align: center;
@@ -296,7 +307,6 @@ ul {
  
 #section1Bases {
                 background: $bgSection1Bases;
-                grid-area: section;
 }
 .sectionArriba {
     padding-top: 1em;
@@ -326,35 +336,50 @@ ul {
                     100% { width: 200px;
                       color:green; }
                 }
+.borderBases {
+    border-bottom: 2px solid rgb(114, 16, 16);
+    margin-bottom: 10px;
+}
 div {
     .tituloBases {
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-family: $robotoTitulo;
         font-weight: 800;
         color:darkgoldenrod ;
         text-align: center;
     }
-}
-}
-#asideBases {
-    background-color: $bgasideBases;
-    grid-area: aside;
-    padding-top: 10%;
-    .__foro {
-        font-family:Arial, Helvetica, sans-serif;
-        color: midnightblue;
-        line-height: 1.4em;
-        text-transform: capitalize;
+    div {
+        .descripcionBases {
+            color: maroon;
+            font-family: $robotoTitulo ;
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+        .artistasBases {
+            text-decoration: none;
+            color: black;
+            font-family: $soloRapTit;
+            line-height: 1.5em;
+                &:hover {
+                    color:crimson;
+                }
+        }
     }
-    .tamanoTextarea {
-        height: 70%;
-        resize: none;
-    }
-} 
+}    
+}
+
 @media only screen and (min-width:1200px) { 
     .videosBases {
         width: 350px;
         height: 230px;
+    }
+    div {
+        .descripcionBases {
+            font-size: 2em;
+        }
+        .artistasBases {
+            font-size: 1.2em;
+        }
     }
 }
 
@@ -381,7 +406,6 @@ div {
     height: auto;
     padding-bottom: 10px;
     padding-top: 10px;
-    // background-color: rgb(240, 204, 158);
     background-color: #f3edb1;
 }
 
