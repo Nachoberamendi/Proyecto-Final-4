@@ -26,14 +26,13 @@
             }
         }
         .carousel-inner {
-            .tamanoCarrousel {
-                img {
-                    border-radius: 10px;
+            .bordeCarousel {
+                a{
+                    img {
+                        border-radius: 10px;
+                    }
                 }
-                .carousel-caption {
-                    position: absolute;
-                    left: 50%;
-                    right: 50%;
+                div {
                     .tituloNoticiaCarrousel {
                         font-family: $robotoTitulo;
                         color: whitesmoke;
@@ -41,40 +40,26 @@
                         line-height: 1.4em;
                         font-size: 1em;
                     }
-                }
-            } 
+                }   
+            }
         }
-        .carousel-zoom {
-			.carousel-item > img {
-				animation: zoom 40s forwards;
-				width: 100%;
-			}
-		}
+}
+.noticia {
+    background-color: $bgacordeonIndex;
+    .tituloNoticia {
+        font-size: 1.2em;
+        font-family: $robotoTitulo;
+        color:rgb(209, 135, 39);
+        font-weight: 600;
+        line-height: 1.5em;
+        text-align: center;
     }
-    @keyframes zoom {
-        from {
-            transform: scale(1 , 1);
-        }
-        to {
-            transform: scale(1.25 , 1.25);
-        }
+    .articleIndex{
+        font-family: $notoTextos;
+        font-size: .8em;
+        line-height: 1.6em;
     }
-    .noticia {
-        background-color: $bgacordeonIndex;
-        .tituloNoticia {
-            font-size: 1.2em;
-            font-family: $robotoTitulo;
-            color:rgb(209, 135, 39);
-            font-weight: 600;
-            line-height: 1.5em;
-            text-align: center;
-        }
-        .articleIndex{
-            font-family: $notoTextos;
-            font-size: .8em;
-            line-height: 1.6em;
-        }
-    }
+}
 }
 #sectionIndex {
     background: $bgasideIndex ;
@@ -379,7 +364,7 @@ div {
         }
         .artistasBases {
             font-size: 1.2em;
-        }
+            }
     }
 }
 

@@ -160,50 +160,16 @@ footer .logoredes a .tamanoImg:hover {
   color: darkgoldenrod;
 }
 
-.section1Index .carrouselIndex .carousel-inner .tamanoCarrousel img {
+.section1Index .carrouselIndex .carousel-inner .bordeCarousel a img {
   border-radius: 10px;
 }
 
-.section1Index .carrouselIndex .carousel-inner .tamanoCarrousel .carousel-caption {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-}
-
-.section1Index .carrouselIndex .carousel-inner .tamanoCarrousel .carousel-caption .tituloNoticiaCarrousel {
+.section1Index .carrouselIndex .carousel-inner .bordeCarousel div .tituloNoticiaCarrousel {
   font-family: "Roboto", sans-serif;
   color: whitesmoke;
   font-weight: 600;
   line-height: 1.4em;
   font-size: 1em;
-}
-
-.section1Index .carrouselIndex .carousel-zoom .carousel-item > img {
-  -webkit-animation: zoom 40s forwards;
-          animation: zoom 40s forwards;
-  width: 100%;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.25, 1.25);
-            transform: scale(1.25, 1.25);
-  }
-}
-
-@keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.25, 1.25);
-            transform: scale(1.25, 1.25);
-  }
 }
 
 .section1Index .noticia {
